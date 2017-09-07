@@ -50,6 +50,8 @@ script:
   - export PATH=/usr/local/bin:$GEM_HOME/bin:$PATH
   - which ruby
   - which gem
+  - mkdir /usr/local/gems
+  - sudo mkdir /usr/local/gems
   - gem install ruby-prof
 #  - gem uninstall rake
   - ./bin/brew-file brew gem install ruby-prof
