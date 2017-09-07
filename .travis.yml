@@ -37,6 +37,8 @@ branches:
 #  - which ruby
 #  - which gem
 script:
+  - gem install rake
+  - gem uninstall rake
   - which ruby
   - which gem
   - echo $PATH
@@ -46,6 +48,8 @@ script:
   - which gem
   - export GEM_HOME=/usr/local/gems
   - export PATH=/usr/local/bin:$GEM_HOME/bin:$PATH
+  - gem install rake
+  - gem uninstall rake
   - ./bin/brew-file brew gem install ruby-prof
 notifications:
   email:
