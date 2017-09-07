@@ -48,6 +48,8 @@ script:
   - which gem
   - export GEM_HOME=/usr/local/gems
   - export PATH=/usr/local/bin:$GEM_HOME/bin:$PATH
+  - which ruby
+  - which gem
   - gem install ruby-prof
 #  - gem uninstall rake
   - ./bin/brew-file brew gem install ruby-prof
