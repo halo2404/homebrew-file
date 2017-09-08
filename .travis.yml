@@ -38,7 +38,7 @@ branches:
 #  - which gem
 script:
   - gem install rake
-#  - gem uninstall rake
+  - gem uninstall rake
   - which ruby
   - which gem
   - echo $PATH
@@ -53,6 +53,8 @@ script:
   - mkdir /usr/local/gems
   - sudo mkdir /usr/local/gems
   - gem install ruby-prof
+  - ls -l /usr
+  - ls -l /usr/local
 #  - gem uninstall rake
   - ./bin/brew-file brew gem install ruby-prof
 notifications:
