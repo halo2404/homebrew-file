@@ -51,6 +51,7 @@ script:
   - which gem
   - mkdir /usr/local/gems
   - sudo mkdir /usr/local/gems
+  - sudo chown travis /usr/local/gems
   - gem install ruby-prof
   - ls -l /usr
   - ls -l /usr/local
