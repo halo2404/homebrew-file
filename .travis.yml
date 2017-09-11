@@ -56,6 +56,7 @@ script:
   - ls -l /usr
   - ls -l /usr/local
 #  - gem uninstall rake
+  - brew update
   - ./bin/brew-file brew gem install json
 notifications:
   email:
