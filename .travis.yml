@@ -55,6 +55,9 @@ script:
   - gem install ruby-prof
   - ls -l /usr
   - ls -l /usr/local
+  - ls -ld ~/.gem
+  - ls -l ~/.gem
+  - sudo chown -R travis ~/.gem
 #  - gem uninstall rake
   - brew update
   - ./bin/brew-file brew gem install json
